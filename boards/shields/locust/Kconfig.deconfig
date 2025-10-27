@@ -1,0 +1,17 @@
+if SHIELD_LOCUST_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Locust"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+
+if SHIELD_LOCUST_LEFT || SHIELD_LOCUST_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
