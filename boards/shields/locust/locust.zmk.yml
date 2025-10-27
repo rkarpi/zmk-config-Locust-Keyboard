@@ -1,0 +1,12 @@
+file_format: "1"
+id: locust
+name: Locust
+type: shield
+url: https://github.com/rkarpi/zmk-config-Locust-Keyboard
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - locust_left
+  - locust_right
