@@ -9,7 +9,7 @@
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_RCTL|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTR|MOD_RSFT)>
+            keep-mods = <(MOD_LCTL|MOD_RSFT)>
         };
     };
 };
