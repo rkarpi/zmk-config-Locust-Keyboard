@@ -8,8 +8,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LCTRL|MOD_LSFT|MOD_RCTRL|MOD_RSFT)>;
-            keep-mods = <(MOD_LCTRL|MOD_RSFT)>
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_RCTL|MOD_RSFT)>;
+            keep-mods = <(MOD_LCTR|MOD_RSFT)>
         };
     };
 };
