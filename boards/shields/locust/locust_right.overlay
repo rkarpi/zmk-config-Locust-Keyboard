@@ -1,7 +1,7 @@
 #include "locust.dtsi" // The shared dtsi file is included in the overlay
 
 &default_transform {
-    col-offset = <6>
+    col-offset = <6>;
 }
 
 // Label of the kscan node in the dtsi
