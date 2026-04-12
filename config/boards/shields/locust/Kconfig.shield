@@ -1,5 +1,5 @@
 config SHIELD_LOCUST_LEFT
-    def_bool $(shields_list_contains, locust_left)
+    def_bool $(shields_list_contains,locust_left)
     
 config SHIELD_LOCUST_RIGHT
-    def_bool $(shields_list_contains, locust_right)
+    def_bool $(shields_list_contains,locust_right)
