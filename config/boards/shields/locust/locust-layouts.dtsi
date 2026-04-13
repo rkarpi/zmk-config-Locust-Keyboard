@@ -64,6 +64,8 @@
             , <&key_physical_attrs 100 100  900  400       0     0     0>
             , <&key_physical_attrs 100 100 1000  400       0     0     0>
             ;
+    };
+
 
     locust_position_map {
         compatible = "zmk,physical-layout-position-map";
@@ -81,5 +83,4 @@
 
     }
 
-    };
 };
