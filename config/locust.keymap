@@ -7,6 +7,7 @@
 #define NUM 2
 #define CONTROL 3
 #define MEH LS(LA(LCTL))
+#define HYPER LS(LA(LC(LGUI)))
 
 
 / {
@@ -36,9 +37,9 @@
             bindings = <
 &kp ESC          &kp N1           &kp N2           &kp N3            &kp N4          &kp N5                      &kp N6         &kp N7          &kp N8         &kp N9        &kp N0          &kp MINUS
 &kp TAB          &kp Q            &kp W            &kp E             &kp R           &kp T                       &kp Y          &kp U           &kp I          &kp O         &kp P           &bspc_del
-&kp LSHFT        &kp A            &kp S            &kp D             &kp F           &kp G                       &kp H          &kp J           &kp K          &kp L         &kp SEMI        &kp RSHFT
+&mt LSHFT CAPS   &kp A            &kp S            &kp D             &kp F           &kp G                       &kp H          &kp J           &kp K          &kp L         &kp SEMI        &kp RSHFT
 &kp LCTRL        &kp Z            &kp X            &kp C             &kp V           &kp B                       &kp N          &kp M           &kp COMMA      &kp DOT       &kp FSLH        &kp RCTRL
-                                                   &kp LALT          &mt MEH SPACE   &mo LOWER                   &mo NUM        &kp SPACE       &kp RETURN
+                                                   &lt CONTROL ESC   &mt MEH SPACE   &lt LOWER ENTER             &mo NUM        &mt MEH SPACE   &kp RETURN
             >;
         };
 
@@ -68,11 +69,11 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |     |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                     |      |      |      |     |      |       |       |
             bindings = <
-&kp ESC          &trans          &kp KP_NUMLOCK    &kp KP_DIVIDE    &kp KP_MULTIPLY &kp KP_MINUS                &trans        &trans           &trans          &trans       &trans          &bootloader
-&kp GRAVE        &kp N1          &kp KP_N7         &kp KP_N8        &kp KP_N9       &kp KP_PLUS                 &kp N6        &kp N7           &kp N8          &kp N9       &kp N0          &trans
-&kp F1           &kp F2          &kp KP_N4         &kp KP_N5        &kp KP_N6       &kp KP_N0                   &trans        &kp LEFT         &kp DOWN        &kp UP       &kp RIGHT       &trans
-&to DEFAULT      &kp F8          &kp KP_N1         &kp KP_N2        &kp KP_N3       &kp KP_DOT                  &kp KP_PLUS   &kp MINUS        &kp EQUAL       &kp LBKT     &kp RBKT        &kp BSLH
-                                                   &kp KP_EQUAL     &kp KP_ENTER    &kp TAB                     &trans        &trans           &trans
+&kp ESC          &kp F2          &kp KP_NUMLOCK    &kp KP_DIVIDE    &kp KP_MULTIPLY &kp KP_MINUS                &trans        &trans           &trans          &trans       &trans          &bootloader
+&kp TAB          &kp LC(C)       &kp KP_N7         &kp KP_N8        &kp KP_N9       &kp KP_PLUS                 &kp N6        &kp N7           &kp UP          &kp N9       &kp N0          &trans
+&mt LSHFT CAPS   &kp LC(V)       &kp KP_N4         &kp KP_N5        &kp KP_N6       &kp KP_N0                   &trans        &kp LEFT         &kp DOWN        &kp RIGHT    &kp RIGHT       &trans
+&kp LCTRL        &kp LC(X)       &kp KP_N1         &kp KP_N2        &kp KP_N3       &kp KP_DOT                  &kp KP_PLUS   &kp MINUS        &kp EQUAL       &kp LBKT     &kp RBKT        &kp BSLH
+                                                   &to DEFAULT      &kp KP_ENTER    &kp EQUAL                   &trans        &mt HYPER SPACE  &trans
             >;
         };
 
